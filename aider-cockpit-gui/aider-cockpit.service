@@ -1,0 +1,13 @@
+[Unit]
+Description=Aider Cockpit GUI Hybrid Server Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=__PROJECT_DIR__
+ExecStart=__PROJECT_DIR__/aider-cockpit --no-browser
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

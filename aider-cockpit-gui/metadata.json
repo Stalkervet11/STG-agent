@@ -1,0 +1,6 @@
+{
+  "name": "Aider Cockpit GUI",
+  "description": "A gorgeous, high-fidelity developer cockpit for Aider coding agent with system load monitoring, parallel task pipelines, autonomous self-correction loops, and offline LLM fallback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
