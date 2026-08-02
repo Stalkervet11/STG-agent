@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  workspace-performance-panel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: performance-panel
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      # Pass your Gemini API Key here or load from system environment
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      # Telegram bot parameters for notifications
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-}
+    # Mount local .env file automatically if present
+    env_file:
+      - .env

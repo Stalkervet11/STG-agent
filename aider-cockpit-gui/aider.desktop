@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Aider Cockpit
+Comment=Full-stack Control Dashboard & Autonomous Self-Correction Loop for Aider AI
+Exec=__PROJECT_DIR__/aider-cockpit
+Icon=__PROJECT_DIR__/assets/icon.png
+Terminal=false
+Categories=Development;Utility;
+Keywords=aider;ai;gui;terminal;coding;
+StartupNotify=true
