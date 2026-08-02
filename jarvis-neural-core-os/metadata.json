@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS Neural Core OS",
+  "description": "High-performance AI Voice & Desktop Assistant for Fedora Linux with dynamic Central Reactor HUD Visual Core, System Monitor, Aider AI Programmer workspace, and Settings Center.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

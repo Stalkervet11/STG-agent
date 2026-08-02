@@ -1,0 +1,35 @@
+[package]
+name = "app"
+version = "0.1.0"
+description = "JARVIS Neural Core OS — Autonomous Cybernetic Assistant for Fedora Linux"
+authors = ["Artcher"]
+license = ""
+repository = ""
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.3", features = [] }
+tauri-plugin-log = "2"
+shellexpand = "3.1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+dotenv = "0.15"
+tokio = { version = "1", features = ["full"] }
+cpal = "0.15"
+hound = "3.5"
+crossbeam-channel = "0.5"
+base64 = "0.22"
+chromiumoxide = { version = "0.6", features = ["tokio-runtime"] }
+futures = "0.3"
+sysinfo = "0.31"
+chrono = "0.4"
