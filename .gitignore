@@ -1,0 +1,28 @@
+# API ключи, секреты и локальные конфиги
+.env
+*.env
+config.json
+secrets.json
+local_resources.json
+
+# Tauri сборки и артефакты
+src-tauri/target/
+dist/
+build/
+*.AppImage
+*.deb
+*.rpm
+
+# Node.js
+node_modules/
+
+# Python / Окружение
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Системный мусор
+.DS_Store
+Thumbs.db
